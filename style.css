@@ -5,13 +5,10 @@
     box-sizing: border-box;
 }
 
-:root{
-    --bg-gradient: linear-gradient(90deg, rgb(255, 221, 0) 0% 0%, white 0% 100%);
-}
 
 html {
     font-family: "Quicksand", sans-serif;
-    background-color: rgb(255, 221, 0);
+
     font-size: 20px;
 }
 body{
@@ -21,14 +18,16 @@ body{
     justify-content: stretch;
 }
 header {
+    background-color: rgb(255, 221, 0);
     display: flex;
     justify-content: space-between;
     align-items:baseline ;
 }
 
 main {
+    --bg-gradient: 0%;
     height: 70vh;
-    background: var(--bg-gradient);
+    background: linear-gradient(to right, rgb(255, 221, 0) var(--bg-gradient), transparent 0);
     display: flex;
     justify-content: center;
     align-items: center;
