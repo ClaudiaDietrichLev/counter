@@ -11,6 +11,7 @@ document.addEventListener("keydown", function(event){
 });
 button.addEventListener("click", function() {
     counter.innerText = "0";
+    gradientIncrease(0);
 })
 
 function counterIncrease () {
